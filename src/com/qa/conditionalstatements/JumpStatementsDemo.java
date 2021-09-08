@@ -2,6 +2,7 @@ package com.qa.conditionalstatements;
 
 public class JumpStatementsDemo {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		// Break
