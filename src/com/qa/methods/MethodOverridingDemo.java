@@ -39,3 +39,16 @@ public class MethodOverridingDemo {
 		System.out.println(icici.getROI());
 	}
 }
+
+/**
+ * 1. Final methods can not be overridden : If we don’t want a method to be
+ * overridden, we declare it as final
+ * 
+ * class Parent { final void show() {} } // Can't be overridden
+ * 
+ * class Child extends Parent { void show() {} } // This would produce error
+ * 
+ * 2. Private methods can not be overridden
+ * 
+ * 3. use super.methodName() to call Parent class methods from Child class
+ */
