@@ -10,10 +10,23 @@ public class ArrayListClassDemo {
 	 * than standard arrays but can be helpful in programs where lots of
 	 * manipulation in the array is needed.
 	 * 
-	 * Java ArrayList allows us to randomly access the list.
+	 * Allows Random access
+	 * 
+	 * Allows duplicates
+	 * 
+	 * Not ordered
 	 * 
 	 * ArrayList can not be used for primitive types, like int, char, etc. We need a
 	 * wrapper class for such cases.
+	 * 
+	 * How the ArrayList capacity is calculated?
+	 * 
+	 * newCapacity = (oldCapacity * 3)/2 + 1 That is 150% of the existing capacity
+	 * plus 1. So, for example, if the ArrayList capacity is 10 and the 11th element
+	 * is added to it, the new internal array will be created with a size of (10 *
+	 * 3)/2 + 1 that is 16.
+	 * 
+	 * ArrayList<Integer> numbers = new ArrayList<Integer>(int initialCapacity);
 	 */
 	public static void main(String[] args) {
 		ArrayList<Integer> numbers = new ArrayList<Integer>();
@@ -21,6 +34,7 @@ public class ArrayListClassDemo {
 		numbers.add(5);
 		numbers.add(15);
 		numbers.add(1);
+		numbers.add(10);
 		System.out.println(numbers);
 		numbers.add(7);
 		System.out.println(numbers);
